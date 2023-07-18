@@ -31,10 +31,10 @@ public class Movement : MonoBehaviour
             {
                 audioSource.Play();
             }
-            else
-            {
-                audioSource.Stop();
-            }
+        }
+        else
+        {
+            audioSource.Stop();
         }
     }
 
