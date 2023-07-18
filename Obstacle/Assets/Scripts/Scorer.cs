@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Scorer : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    int score;
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        score++;
     }
 }
