@@ -9,10 +9,14 @@ public class CollisionHandler : MonoBehaviour
     [SerializeField] AudioClip crashSound;
     [SerializeField] AudioClip successSound;
 
+    [SerializeField] ParticleSystem crashParticle;
+    [SerializeField] ParticleSystem successParticle;
+
     AudioSource audioSource;
 
     string item;
     int currentSceneIndex;
+    bool isTransitioning;
 
     void Start()
     {
@@ -21,6 +25,8 @@ public class CollisionHandler : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (isTransitioning) return;
+
         item = collision.gameObject.tag;
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
@@ -33,15 +39,21 @@ public class CollisionHandler : MonoBehaviour
 
     void CrashSequence()
     {
+        isTransitioning = true;
+        audioSource.Stop();
         GetComponent<Movement>().enabled = false;
         audioSource.PlayOneShot(crashSound);
+        crashParticle.Play();
         Invoke("ReloadLevel", loadDelay);
     }
 
     void SuccessSequence()
     {
+        isTransitioning = true;
+        audioSource.Stop();
         GetComponent<Movement>().enabled = false;
         audioSource.PlayOneShot(successSound);
+        successParticle.Play();
         Invoke("LoadNextLevel", loadDelay);
     }
 

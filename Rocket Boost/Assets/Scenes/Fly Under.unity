@@ -378,6 +378,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5676222801162543080, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
+      propertyPath: mainEngineSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 76091da4adc6c5c4197f751178550c73, type: 3}
+    - target: {fileID: 7005791757250337794, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
+      propertyPath: crashSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 129c9a8b61bf80b4b81949522dd757f9, type: 3}
+    - target: {fileID: 7005791757250337794, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
+      propertyPath: successSound
+      value: 
+      objectReference: {fileID: 8300000, guid: a19d3ea25ee281c40bbe3de8aea5a62c, type: 3}
     - target: {fileID: 8040603434622734940, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
       propertyPath: m_Name
       value: Rocket
