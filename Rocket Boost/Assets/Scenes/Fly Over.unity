@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 4637d3c5ec8efa24092949cce64d0427, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.56452316, a: 1}
+  m_IndirectSpecularColor: {r: 0.004360977, g: 0.004360977, b: 0.004360977, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -210,7 +210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 50, z: 0}
+  m_LocalPosition: {x: 0, y: 50, z: -5.76}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -309,6 +309,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
+--- !u!198 &1113483820 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2116960579406752415, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
+  m_PrefabInstance: {fileID: 501022419657301131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &501022419657301131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -317,6 +322,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5676222801162543080, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
+      propertyPath: jetParticle
+      value: 
+      objectReference: {fileID: 1113483820}
     - target: {fileID: 8040603434622734940, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
       propertyPath: m_Name
       value: Rocket
@@ -365,44 +374,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 445217473705917640, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
-    - {fileID: 4628438388366788743, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
-    - {fileID: 2806212656039666590, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
-    - {fileID: 6689985701962908569, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8040603434622734940, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
-      insertIndex: 2
-      addedObject: {fileID: 501022419657301133}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
---- !u!1 &501022419657301132 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8040603434622734940, guid: 0460ecfe68bab274ab6dffb91ee43dbd, type: 3}
-  m_PrefabInstance: {fileID: 501022419657301131}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &501022419657301133
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501022419657301132}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.6935377, y: 1.4686567, z: 1}
-  m_Center: {x: -0.0027451515, y: 0.23432833, z: 0}
 --- !u!1001 &2170801271256372349
 PrefabInstance:
   m_ObjectHideFlags: 0

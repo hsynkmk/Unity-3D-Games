@@ -394,6 +394,7 @@ MonoBehaviour:
   thrust: 1000
   rotationThrust: 100
   mainEngineSound: {fileID: 8300000, guid: 76091da4adc6c5c4197f751178550c73, type: 3}
+  jetParticle: {fileID: 0}
 --- !u!1 &8997442339500903999
 GameObject:
   m_ObjectHideFlags: 0

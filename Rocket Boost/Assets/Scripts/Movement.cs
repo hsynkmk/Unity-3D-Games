@@ -39,20 +39,17 @@ public class Movement : MonoBehaviour
         else
         {
             audioSource.Stop();
+            jetParticle.Stop();
         }
     }
 
     void ProcessRotation()
     {
         if (Input.GetKey(KeyCode.A))
-        {
             ApplyRotation(rotationThrust);
-        }
 
         else if (Input.GetKey(KeyCode.D))
-        {
             ApplyRotation(-rotationThrust);
-        }
     }
 
     void ApplyRotation(float rotation)
