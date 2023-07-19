@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 76d2b265493178c49b6b8f64519f10f6, type: 2}
+  - {fileID: 2100000, guid: 26c8336c7771bf6408c43b7ce103e0a6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -144,7 +144,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26c8336c7771bf6408c43b7ce103e0a6, type: 2}
+  - {fileID: 2100000, guid: 9abda5e634a465747b7db39ba4e43f5b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 1070246822571732827}
   - component: {fileID: 7005791757250337794}
   - component: {fileID: 5676222801162543080}
+  - component: {fileID: 6172198775914611818}
   m_Layer: 0
   m_Name: Rocket
   m_TagString: Untagged
@@ -208,7 +209,7 @@ Transform:
   - {fileID: 8665972872860572397}
   - {fileID: 2291965346817269975}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1689694856356551511
 MeshFilter:
@@ -394,7 +395,19 @@ MonoBehaviour:
   thrust: 1000
   rotationThrust: 100
   mainEngineSound: {fileID: 8300000, guid: 76091da4adc6c5c4197f751178550c73, type: 3}
-  jetParticle: {fileID: 0}
+  jetParticle: {fileID: 2116960579406752415}
+--- !u!114 &6172198775914611818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8040603434622734940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76368cb9f7ea0154290b28991b1a78ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8997442339500903999
 GameObject:
   m_ObjectHideFlags: 0
@@ -456,7 +469,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 26c8336c7771bf6408c43b7ce103e0a6, type: 2}
+  - {fileID: 2100000, guid: 9abda5e634a465747b7db39ba4e43f5b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -634,6 +647,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3e17a5f78c07934f8bd1e8d81c121e4, type: 3}
+--- !u!198 &2116960579406752415 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198100719057022332, guid: f3e17a5f78c07934f8bd1e8d81c121e4, type: 3}
+  m_PrefabInstance: {fileID: 2296624581960517603}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2291965346817269975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4940884351362868, guid: f3e17a5f78c07934f8bd1e8d81c121e4, type: 3}
